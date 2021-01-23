@@ -60,9 +60,6 @@ export default function Cloud() {
           d.size = ~~fontSize.call(this, d, i);
           d.padding = padding.call(this, d, i);
           return d;
-        })
-        .sort(function(a, b) {
-          return b.size - a.size;
         });
 
     // Added by react-wordcloud
