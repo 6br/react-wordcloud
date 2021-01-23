@@ -149,10 +149,7 @@ export function layout({
     scale,
   } = options;
 
-  const sortedWords = words
-    .concat()
-    .sort((x, y) => descending(x.value, y.value))
-    .slice(0, maxWords);
+  const sortedWords = words;
 
   const random = seedrandom(
     deterministic ? randomSeed || 'deterministic' : null,
